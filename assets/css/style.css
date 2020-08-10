@@ -1,18 +1,30 @@
 /* This is the CSS file to accompany Homework-1-final the Heroseon website */ 
 
-
+/* default element style */ 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     
 }
+
 /* to adapt to small screens */
 @media (max-width: 768px) {
     .float-right-sm {
       float: right;
     }
   }
+
+/* -----floats items left or right----- */ 
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
 
 /* --------------header and nav bar------------------------------------ */ 
 .header {
@@ -43,7 +55,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-/* nav bar */ 
+/*---------------- nav bar --------------*/ 
 .header div ul {
     list-style-type: none;
 }
@@ -53,7 +65,15 @@
     margin-left: 25px;
 }
 
-/* body elements */ 
+/* ------nav bar links---- */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+/* ---------------------body elements------------------------------------------------------------- */ 
 body {
     background-color: #d9dcd6;
     overflow: scroll;
@@ -61,20 +81,16 @@ body {
    align-items: center;
 }
 
-/* ----nav bar links---- */
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/*---- default paragraph ----*/
+/*---- body paragraph style ----*/
 p {
     font-size: 16px;
     padding-bottom: 20px;
     align-items: stretch;
 }
 
-/*------------------ large photo banner-------------------------------- */ 
+
+
+/*------ large photo banner------ */ 
 .hero {
     height: 800px;
     width: 100%;
@@ -84,18 +100,7 @@ p {
     background-position: center;
 }
 
-/* -----floats items left or right----- */ 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-/* --------------3 box main content --------------------------------------------*/ 
+/* --------------3 main content boxes ---------------------*/ 
 .rows {
     width: 100%;
     flex-flow: row;
@@ -110,7 +115,7 @@ p {
     overflow: auto;
     
 }
-/* ------main content box formating------ */ 
+/* ------ 3 main content boxes formating------ */ 
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -137,20 +142,8 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-/* ------main 3 content box photos------ */ 
-.search-engine-optimization img {
-    max-height: 200px;
-}
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* ------main content titles -------*/ 
+/* ------3 main content boxes titles -------*/ 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -164,6 +157,19 @@ p {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+/* ------main 3 content boxes images------ */ 
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
 }
 
 /* -------------------sidebar box -------------------------------------*/ 
@@ -229,7 +235,7 @@ p {
     max-width: 150px;
 }
 
-/* ----------footer code -----------------------------------------------*/ 
+/* -------------footer code -----------------------------------------------*/ 
 .footer {
     padding: 30px;
     clear: both;
@@ -240,3 +246,5 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+
